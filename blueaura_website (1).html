@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueAura Textiles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+    }
+    header {
+      background-color: #004d66;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1595433562696-ea9a140f6b1c?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 260px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: white;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      margin: 0.8rem 0 0.4rem;
+    }
+    .product-card p {
+      margin: 0 1rem 0.8rem;
+      font-size: 0.95rem;
+    }
+    .price {
+      color: #004d66;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .testimonial {
+      background: #f0f0f0;
+      padding: 3rem 2rem;
+    }
+    .testimonial h2 {
+      margin-bottom: 2rem;
+    }
+    .testimonial blockquote {
+      font-style: italic;
+      max-width: 600px;
+      margin: 1rem auto;
+      color: #555;
+    }
+    .cta {
+      background: #004d66;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .cta h3 {
+      margin: 0 0 1rem;
+    }
+    .cta a {
+      background: white;
+      color: #004d66;
+      padding: 0.6rem 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #f5f5f5;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .certifications {
+      background: #fff;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .certifications img {
+      height: 50px;
+      object-fit: contain;
+    }
+    .inquiry-form {
+      max-width: 500px;
+      margin: 2rem auto;
+      text-align: left;
+    }
+    .inquiry-form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: 600;
+    }
+    .inquiry-form input,
+    .inquiry-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .inquiry-form button {
+      margin-top: 1rem;
+      background: #004d66;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BlueAura Textiles</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Experience the Luxury for Less</h2>
+    <p>Premium Bath Towels, Mats, and Napkins – 30% Cheaper Than Anywhere Else</p>
+  </section>
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1588776814546-f452c9b7f5c5?auto=format&fit=crop&w=800&q=80" alt="Bath Towel" />
+        <h3>Bath Towels</h3>
+        <p>Ultra-soft, absorbent towels available in bulk.</p>
+        <div class="price">Starting at $2.50/unit</div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1590073242673-25d9a4c60e4e?auto=format&fit=crop&w=800&q=80" alt="Bath Mat" />
+        <h3>Bath Mats</h3>
+        <p>Luxury mats for hotels and homes alike.</p>
+        <div class="price">Starting at $1.90/unit</div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600115991830-77c3f28cb3aa?auto=format&fit=crop&w=800&q=80" alt="Napkins" />
+        <h3>Hand Napkins</h3>
+        <p>Perfect for kitchens, cafes, and restaurants.</p>
+        <div class="price">Starting at $0.50/unit</div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonial">
+    <h2>What Our Clients Say</h2>
+    <blockquote>"BlueAura has completely transformed the way we purchase textiles. The quality is unmatched, and the pricing is unbeatable. Highly recommend!" – Hotel Grand Vista</blockquote>
+    <blockquote>"We’ve been sourcing towels and napkins from BlueAura for over a year now. They’re always professional, prompt, and honest. A+ team!" – Saffron Chain of Restaurants</blockquote>
+  </section>
+  <section class="certifications">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Oeko-Tex_logo.svg/512px-Oeko-Tex_logo.svg.png" alt="OEKO-TEX Certified">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/ISO_9001-2015_Certified.svg/512px-ISO_9001-2015_Certified.svg.png" alt="ISO 9001 Certified">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/GOTS_logo.svg/512px-GOTS_logo.svg.png" alt="GOTS Certified">
+  </section>
+  <section class="section" id="about">
+    <h2>About BlueAura</h2>
+    <p>We are your trusted sourcing partner in the world of bath textiles. BlueAura Textiles connects reliable works in manufacturing with bulk buyers around the globe. No middlemen. Transparent pricing. Seamless supply.</p>
+  </section>
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:sales@blueauraexport.com">blueauratex@outlook.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/917776067227">+91 99999 99999</a></p>
+    <div class="inquiry-form">
+      <form action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Inquiry</button>
+      </form>
+    </div>
+  </section>
+  <section class="cta">
+    <h3>Ready to Elevate Your Bath Linen Game?</h3>
+    <p>Let us source and deliver the best quality textiles for your brand.</p>
+    <a href="#contact">Get in Touch</a>
+  </section>
+  <footer>
+    &copy; 2025 BlueAura Textiles. All rights reserved.
+  </footer>
+</body>
+</html>
